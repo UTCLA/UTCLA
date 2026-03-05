@@ -10,7 +10,7 @@ interface NationsMapProps {
 
 export default function NationsMap({ nations }: NationsMapProps) {
   return (
-    <div className="w-full h-[500px] rounded-lg overflow-hidden border border-earth-200 shadow-sm">
+    <div className="w-full h-[320px] md:h-[500px] rounded-lg overflow-hidden border border-earth-200 shadow-sm">
       <MapContainer
         center={[-20, 134]}
         zoom={5}

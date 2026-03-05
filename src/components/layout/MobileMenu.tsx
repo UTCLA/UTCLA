@@ -22,7 +22,7 @@ export default function MobileMenu() {
     <div className="lg:hidden">
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="text-white p-2"
+        className="text-white p-3"
         aria-label="Toggle menu"
         aria-expanded={isOpen}
       >

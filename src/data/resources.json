@@ -1,0 +1,56 @@
+[
+  {
+    "id": "governance-framework",
+    "title": "UTCLA Governance Framework",
+    "description": "Overview of the Alliance's governance structure, representation model, and decision-making processes.",
+    "category": "governance",
+    "filename": "utcla-governance-framework.pdf",
+    "fileType": "PDF",
+    "fileSize": "2.4 MB"
+  },
+  {
+    "id": "cultural-protection-policy",
+    "title": "Cultural Protection Policy",
+    "description": "Policy framework for the protection and preservation of cultural heritage, ceremony, and custodial responsibilities.",
+    "category": "cultural",
+    "filename": "cultural-protection-policy.pdf",
+    "fileType": "PDF",
+    "fileSize": "1.8 MB"
+  },
+  {
+    "id": "legal-position-paper",
+    "title": "Lawful Position & Self-Determination",
+    "description": "Legal analysis of the Alliance's position under international law and frameworks for Indigenous self-determination.",
+    "category": "legal",
+    "filename": "lawful-position-paper.pdf",
+    "fileType": "PDF",
+    "fileSize": "3.1 MB"
+  },
+  {
+    "id": "economic-cooperation-guidelines",
+    "title": "Economic Cooperation Guidelines",
+    "description": "Guidelines for voluntary economic collaboration, resource sharing, and sustainable development between Member Nations.",
+    "category": "economic",
+    "filename": "economic-cooperation-guidelines.pdf",
+    "fileType": "PDF",
+    "fileSize": "1.5 MB"
+  },
+  {
+    "id": "treaty-partnership-template",
+    "title": "Treaty Partnership Template",
+    "description": "Template framework for establishing formal Treaty partnerships between the Alliance and additional Tribal Nations.",
+    "category": "governance",
+    "filename": "treaty-partnership-template.pdf",
+    "fileType": "PDF",
+    "fileSize": "0.9 MB"
+  },
+  {
+    "id": "diplomacy-protocols",
+    "title": "Diplomacy Protocols",
+    "description": "Protocols for diplomatic engagement, inter-tribal cooperation, and international Indigenous-to-Indigenous dialogue.",
+    "category": "governance",
+    "filename": "diplomacy-protocols.pdf",
+    "fileType": "PDF",
+    "fileSize": "1.2 MB"
+  }
+]

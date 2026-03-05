@@ -1,0 +1,44 @@
+[
+  {
+    "id": "pintupi",
+    "name": "Pintupi Wati Tjuta Tjungarinyi",
+    "region": "Central Western Desert",
+    "description": "The Pintupi people are custodians of the Central Western Desert, maintaining deep connections to Tjukurpa through ceremony, songlines, and land stewardship across vast desert Country.",
+    "coordinates": [-23.5, 129.0],
+    "territory": [
+      [-21.5, 127.0],
+      [-21.5, 131.0],
+      [-25.5, 131.0],
+      [-25.5, 127.0]
+    ],
+    "color": "#c87a1e"
+  },
+  {
+    "id": "niripono",
+    "name": "Ni'ripono Gwata Tu Sovereign Government",
+    "region": "Cape York Region",
+    "description": "The Ni'ripono Gwata Tu people govern their sovereign territory in the Cape York region, upholding customary law and cultural authority over their ancestral lands and waters.",
+    "coordinates": [-14.5, 143.5],
+    "territory": [
+      [-12.5, 142.0],
+      [-12.5, 145.0],
+      [-16.5, 145.0],
+      [-16.5, 142.0]
+    ],
+    "color": "#8b231d"
+  },
+  {
+    "id": "majagi",
+    "name": "Majagi",
+    "region": "Larrakia, Tiwi Island and Brinkin peoples",
+    "description": "Majagi represents the collective governance of the Larrakia, Tiwi Island, and Brinkin peoples, custodians of the tropical lands and seas of the Top End.",
+    "coordinates": [-12.5, 131.0],
+    "territory": [
+      [-11.0, 129.5],
+      [-11.0, 132.5],
+      [-14.0, 132.5],
+      [-14.0, 129.5]
+    ],
+    "color": "#916c4a"
+  }
+]

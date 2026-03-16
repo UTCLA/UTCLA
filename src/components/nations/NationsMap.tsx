@@ -18,8 +18,8 @@ export default function NationsMap({ nations }: NationsMapProps) {
         className="w-full h-full"
       >
         <TileLayer
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
-          url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+          attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+          url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
         />
         {nations.map((nation) => (
           <Polygon
@@ -28,8 +28,8 @@ export default function NationsMap({ nations }: NationsMapProps) {
             pathOptions={{
               color: nation.color,
               fillColor: nation.color,
-              fillOpacity: 0.3,
-              weight: 2,
+              fillOpacity: 0.45,
+              weight: 3,
             }}
           >
             <Popup>

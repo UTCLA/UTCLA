@@ -5,7 +5,7 @@ export default function HeroSection() {
     <section className="relative bg-charcoal-900 text-white overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-charcoal-900 via-earth-900 to-charcoal-900 opacity-90" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--color-ochre-900)_0%,_transparent_50%)] opacity-40" />
-      <div className="relative max-w-5xl mx-auto px-6 py-28 md:py-40 text-center">
+      <div className="relative max-w-5xl mx-auto px-6 pt-28 pb-36 md:py-40 text-center">
         <blockquote className="mb-10">
           <p className="font-heading text-2xl md:text-4xl lg:text-5xl font-medium italic leading-snug text-sand-200">
             &ldquo;Our law was given to us by our ancestors and comes from

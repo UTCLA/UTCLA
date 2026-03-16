@@ -108,10 +108,10 @@ export default function GovernancePage() {
           <h2 className="font-heading text-3xl font-bold text-charcoal-900 mb-6">
             Cultural Authority &amp; Integrity
           </h2>
-          <p className="text-charcoal-700 leading-relaxed mb-6">
+          <blockquote className="mb-6 border-l-4 border-ochre-500 bg-sand-50 rounded-r-lg px-6 py-4 italic text-charcoal-800 text-lg leading-relaxed">
             Cultural legitimacy is the foundation of governance. Authority flows
             from cultural custodianship — not from imposed structures.
-          </p>
+          </blockquote>
           <p className="text-charcoal-700 leading-relaxed mb-4">
             The Alliance governance process:
           </p>

@@ -32,11 +32,13 @@ export default function AboutPage() {
             <li>Facilitate responsible economic cooperation</li>
             <li>Support intergenerational sustainability</li>
           </ul>
-          <p className="text-charcoal-700 leading-relaxed">
-            UTCLA does not replace the sovereignty of any Tribal Nation. Each
-            Nation retains full authority over its own Country and internal
-            affairs.
-          </p>
+          <div className="mt-6 border-l-4 border-ochre-500 bg-sand-50 rounded-r-lg px-6 py-4">
+            <p className="text-charcoal-800 leading-relaxed font-medium">
+              UTCLA does not replace the sovereignty of any Tribal Nation. Each
+              Nation retains full authority over its own Country and internal
+              affairs.
+            </p>
+          </div>
         </section>
 
         <Divider />
@@ -48,11 +50,11 @@ export default function AboutPage() {
           <h3 className="font-heading text-xl font-semibold text-ochre-700 mb-4">
             Tjukurpa — Supreme Cultural Authority
           </h3>
-          <p className="text-charcoal-700 leading-relaxed mb-6">
+          <blockquote className="my-6 border-l-4 border-deep-red-600 pl-6 italic text-charcoal-700 leading-relaxed text-lg">
             The foundation of the Alliance is Tjukurpa (Law/Lore) — the ancient
             governance system derived from nature and upheld through ceremony,
             kinship, songlines, and custodial responsibility.
-          </p>
+          </blockquote>
           <p className="text-charcoal-700 leading-relaxed mb-4">
             Tjukurpa governs:
           </p>

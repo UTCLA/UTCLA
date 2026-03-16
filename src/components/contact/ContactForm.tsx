@@ -79,7 +79,7 @@ export default function ContactForm() {
             id="name"
             name="name"
             required
-            className="w-full px-4 py-3 rounded border border-earth-300 bg-white text-charcoal-800 focus:outline-none focus:ring-2 focus:ring-ochre-500 focus:border-ochre-500"
+            className="w-full px-4 py-3 rounded-md border border-earth-400 bg-white text-charcoal-800 placeholder:text-charcoal-400 transition-colors focus:outline-none focus:ring-2 focus:ring-ochre-500 focus:border-ochre-500"
           />
           {errors.name && <p className="mt-1 text-sm text-deep-red-600">{errors.name}</p>}
         </div>
@@ -91,7 +91,7 @@ export default function ContactForm() {
             type="text"
             id="organization"
             name="organization"
-            className="w-full px-4 py-3 rounded border border-earth-300 bg-white text-charcoal-800 focus:outline-none focus:ring-2 focus:ring-ochre-500 focus:border-ochre-500"
+            className="w-full px-4 py-3 rounded-md border border-earth-400 bg-white text-charcoal-800 placeholder:text-charcoal-400 transition-colors focus:outline-none focus:ring-2 focus:ring-ochre-500 focus:border-ochre-500"
           />
         </div>
       </div>
@@ -105,7 +105,7 @@ export default function ContactForm() {
           id="email"
           name="email"
           required
-          className="w-full px-4 py-3 rounded border border-earth-300 bg-white text-charcoal-800 focus:outline-none focus:ring-2 focus:ring-ochre-500 focus:border-ochre-500"
+          className="w-full px-4 py-3 rounded-md border border-earth-400 bg-white text-charcoal-800 placeholder:text-charcoal-400 transition-colors focus:outline-none focus:ring-2 focus:ring-ochre-500 focus:border-ochre-500"
         />
         {errors.email && <p className="mt-1 text-sm text-deep-red-600">{errors.email}</p>}
       </div>
@@ -119,7 +119,7 @@ export default function ContactForm() {
           id="subject"
           name="subject"
           required
-          className="w-full px-4 py-3 rounded border border-earth-300 bg-white text-charcoal-800 focus:outline-none focus:ring-2 focus:ring-ochre-500 focus:border-ochre-500"
+          className="w-full px-4 py-3 rounded-md border border-earth-400 bg-white text-charcoal-800 placeholder:text-charcoal-400 transition-colors focus:outline-none focus:ring-2 focus:ring-ochre-500 focus:border-ochre-500"
         />
         {errors.subject && <p className="mt-1 text-sm text-deep-red-600">{errors.subject}</p>}
       </div>
@@ -133,7 +133,7 @@ export default function ContactForm() {
           name="message"
           rows={6}
           required
-          className="w-full px-4 py-3 rounded border border-earth-300 bg-white text-charcoal-800 focus:outline-none focus:ring-2 focus:ring-ochre-500 focus:border-ochre-500 resize-vertical"
+          className="w-full px-4 py-3 rounded-md border border-earth-400 bg-white text-charcoal-800 placeholder:text-charcoal-400 transition-colors focus:outline-none focus:ring-2 focus:ring-ochre-500 focus:border-ochre-500 resize-vertical"
         />
         {errors.message && <p className="mt-1 text-sm text-deep-red-600">{errors.message}</p>}
       </div>

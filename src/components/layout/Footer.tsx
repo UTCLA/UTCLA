@@ -51,9 +51,13 @@ export default function Footer() {
             </Link>
           </div>
         </div>
-        <div className="mt-12 pt-8 border-t border-charcoal-700 text-center text-xs text-charcoal-500">
-          <p>&copy; {new Date().getFullYear()} United Tribal Countries Land Alliance. All rights reserved.</p>
-          <p className="mt-1">Sovereignty was never ceded.</p>
+        <div className="mt-12 pt-8 border-t border-charcoal-700 text-center">
+          <p className="font-heading text-base text-ochre-400 italic mb-4 tracking-wide">
+            Sovereignty was never ceded.
+          </p>
+          <p className="text-xs text-charcoal-500">
+            &copy; {new Date().getFullYear()} United Tribal Countries Land Alliance. All rights reserved.
+          </p>
         </div>
       </div>
     </footer>

@@ -25,7 +25,7 @@ export async function POST(request: Request) {
 
     const { error: sendError } = await resend.emails.send({
       from: "UTCLA Contact Form <contact@utcla.org>",
-      to: "utcla@proton.me",
+      to: "contact@utcla.org",
       replyTo: email,
       subject: `[UTCLA Contact] ${subject}`,
       text: [
@@ -70,7 +70,7 @@ export async function POST(request: Request) {
         "",
         "Warm regards,",
         "United Tribal Countries Land Alliance",
-        "utcla@proton.me",
+        "contact@utcla.org",
       ].join("\n"),
     });
 

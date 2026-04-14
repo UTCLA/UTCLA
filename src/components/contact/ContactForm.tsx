@@ -20,7 +20,6 @@ export default function ContactForm() {
       email: formData.get("email") as string,
       subject: formData.get("subject") as string,
       message: formData.get("message") as string,
-      honeypot: formData.get("honeypot") as string,
     };
 
     const result = contactFormSchema.safeParse(data);
@@ -64,11 +63,6 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
-      {/* Honeypot field - hidden from real users */}
-      <div className="absolute -left-[9999px]" aria-hidden="true">
-        <input type="text" name="honeypot" tabIndex={-1} autoComplete="off" />
-      </div>
-
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         <div>
           <label htmlFor="name" className="block text-sm font-medium text-charcoal-700 mb-2">

@@ -23,7 +23,7 @@ export async function POST(request: Request) {
 
     const { name, organization, email, subject, message } = result.data;
 
-    await resend.emails.send({
+    const { error: sendError } = await resend.emails.send({
       from: "UTCLA Contact Form <contact@utcla.org>",
       to: "utcla@proton.me",
       replyTo: email,
@@ -39,6 +39,39 @@ export async function POST(request: Request) {
       ]
         .filter(Boolean)
         .join("\n"),
+    });
+
+    if (sendError) {
+      console.error("Resend error:", sendError);
+      return NextResponse.json(
+        { error: "Failed to send message" },
+        { status: 500 }
+      );
+    }
+
+    // Send confirmation email to the submitter
+    await resend.emails.send({
+      from: "UTCLA <contact@utcla.org>",
+      to: email,
+      subject: "Your message has been received — UTCLA",
+      text: [
+        `Dear ${name},`,
+        "",
+        "Thank you for your correspondence with the United Tribal Countries Land Alliance.",
+        "",
+        "We have received your message and will respond through appropriate diplomatic channels.",
+        "",
+        "For your records, here is a copy of your submission:",
+        "",
+        `Subject: ${subject}`,
+        "",
+        "Message:",
+        message,
+        "",
+        "Warm regards,",
+        "United Tribal Countries Land Alliance",
+        "utcla@proton.me",
+      ].join("\n"),
     });
 
     return NextResponse.json({ success: true });

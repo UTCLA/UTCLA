@@ -27,7 +27,8 @@ export default function DocumentCard({ resource }: { resource: Resource }) {
         {resource.description}
       </p>
       <a
-        href={`/documents/${resource.filename}`}
+        href={resource.filePath ?? `/documents/${resource.filename}`}
+        download={resource.filename}
         className="text-ochre-600 hover:text-ochre-700 text-sm font-medium transition-colors"
       >
         Download {resource.fileType} &darr;

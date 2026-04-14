@@ -25,7 +25,7 @@ export async function POST(request: Request) {
 
     await resend.emails.send({
       from: "UTCLA Contact Form <contact@utcla.org>",
-      to: "contact@utcla.org",
+      to: "utcla@proton.me",
       replyTo: email,
       subject: `[UTCLA Contact] ${subject}`,
       text: [

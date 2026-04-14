@@ -23,6 +23,7 @@ export interface Resource {
   description: string;
   category: "governance" | "legal" | "cultural" | "economic";
   filename: string;
+  filePath?: string;
   fileType: string;
   fileSize: string;
 }

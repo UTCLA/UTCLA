@@ -1,56 +1,48 @@
 [
   {
-    "id": "governance-framework",
-    "title": "UTCLA Governance Framework",
-    "description": "Overview of the Alliance's governance structure, representation model, and decision-making processes.",
-    "category": "governance",
-    "filename": "utcla-governance-framework.pdf",
-    "fileType": "PDF",
-    "fileSize": "2.4 MB"
-  },
-  {
-    "id": "cultural-protection-policy",
-    "title": "Cultural Protection Policy",
-    "description": "Policy framework for the protection and preservation of cultural heritage, ceremony, and custodial responsibilities.",
-    "category": "cultural",
-    "filename": "cultural-protection-policy.pdf",
-    "fileType": "PDF",
-    "fileSize": "1.8 MB"
-  },
-  {
-    "id": "legal-position-paper",
-    "title": "Lawful Position & Self-Determination",
-    "description": "Legal analysis of the Alliance's position under international law and frameworks for Indigenous self-determination.",
+    "id": "majagi-proclamation-independence",
+    "title": "Proclamation of Independence — Majagi",
+    "description": "Public Notice of Proclamation of Independence by Juma Samuel Fejo of the Larrakia Majagi Tribe, asserting ancestral rights and tribal lore under the principle \"first in time, best at law\". Includes the Royal Bloodline Lineage of the Bilby and the Quoll (FEJO Family) and Statement of Claim against the NT Government (2024).",
     "category": "legal",
-    "filename": "lawful-position-paper.pdf",
+    "filename": "majagi-proclamation-independence-2022.pdf",
     "fileType": "PDF",
-    "fileSize": "3.1 MB"
+    "fileSize": "1.7 MB"
   },
   {
-    "id": "economic-cooperation-guidelines",
-    "title": "Economic Cooperation Guidelines",
-    "description": "Guidelines for voluntary economic collaboration, resource sharing, and sustainable development between Member Nations.",
-    "category": "economic",
-    "filename": "economic-cooperation-guidelines.pdf",
+    "id": "customary-law-notice-jan-2023",
+    "title": "Customary Law Notice — UTCLA (January 2023)",
+    "description": "Official notice issued on the 6th day of January 2023 (Ref MTT000555) by the United Tribal Countries Land Alliance, documenting the Custodial Tribal High Court proceedings, findings on lawful standing of Original Tribal Countries, and trademark registrations lodged with TIBNLA Patent and Trademark Office for Member Nations.",
+    "category": "legal",
+    "filename": "customary-law-notice-jan-2023.pdf",
     "fileType": "PDF",
-    "fileSize": "1.5 MB"
+    "fileSize": "2.0 MB"
   },
   {
-    "id": "treaty-partnership-template",
-    "title": "Treaty Partnership Template",
-    "description": "Template framework for establishing formal Treaty partnerships between the Alliance and additional Tribal Nations.",
-    "category": "governance",
-    "filename": "treaty-partnership-template.pdf",
+    "id": "grandmother-lore-notice-dec-2023",
+    "title": "Grandmother Lore Notice (December 2023)",
+    "description": "Official Lore Notice issued 4 December 2023 (Instrument No. DSDAUSJP130-20231204-1601-GM-001) by Grandmothers Lore — the superior Lore/Law on the aniuima (land) of the Continent known as Terra Australis. Includes open letter to Heads of State, letter to WIPO and IP Australia, and the Statement of Truth of Juma of the Larrakia.",
+    "category": "legal",
+    "filename": "grandmother-lore-notice-dec-2023.pdf",
     "fileType": "PDF",
-    "fileSize": "0.9 MB"
+    "fileSize": "5.1 MB"
   },
   {
-    "id": "diplomacy-protocols",
-    "title": "Diplomacy Protocols",
-    "description": "Protocols for diplomatic engagement, inter-tribal cooperation, and international Indigenous-to-Indigenous dialogue.",
-    "category": "governance",
-    "filename": "diplomacy-protocols.pdf",
+    "id": "sovereign-nationals-rights-feb-2026",
+    "title": "Original Traditional Sovereign Nationals — Rights over Land, Seas & Airways (February 2026)",
+    "description": "Declaration affirming the rights of Original Traditional Sovereign Nationals over the land, seas and airways of Terra Australis, issued February 2026.",
+    "category": "legal",
+    "filename": "sovereign-nationals-rights-feb-2026.pdf",
     "fileType": "PDF",
-    "fileSize": "1.2 MB"
+    "fileSize": "44 KB"
+  },
+  {
+    "id": "lawful-standing-flag-ceremony",
+    "title": "Lawful Standing — Customary Flag Law Ceremony (1 January 2023)",
+    "description": "Photographic record of the Customary Flag Law Ceremony restating customary land claim on Country, held on 1 January 2023. Juma of the Larrakia with the Majagi flag.",
+    "category": "cultural",
+    "filename": "lawful-standing-flag-ceremony-jan-2023.png",
+    "filePath": "/images/lawful-standing-flag-ceremony-jan-2023.png",
+    "fileType": "Image",
+    "fileSize": "1.6 MB"
   }
 ]

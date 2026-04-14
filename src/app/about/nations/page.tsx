@@ -46,6 +46,25 @@ export default function NationsPage() {
             member Country/Nation remains autonomous and self-governing.
           </p>
         </section>
+
+        <section className="mt-20">
+          <h2 className="font-heading text-2xl font-bold text-charcoal-900 mb-2">
+            Pintupi Proclamation
+          </h2>
+          <p className="text-charcoal-600 mb-8">
+            The formal proclamation of the Pintupi Wati Tjuta Tjungarinyi,
+            founding member of the United Tribal Countries Land Alliance.
+          </p>
+          <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
+            <iframe
+              src="https://rumble.com/embed/v3zuqvc/"
+              className="absolute inset-0 w-full h-full rounded-lg"
+              frameBorder="0"
+              allowFullScreen
+              title="Pintupi Proclamation"
+            />
+          </div>
+        </section>
       </div>
     </>
   );

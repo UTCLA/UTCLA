@@ -15,12 +15,6 @@ export async function POST(request: Request) {
       );
     }
 
-    // Honeypot check
-    if (result.data.honeypot) {
-      // Silently accept but don't process (bot submission)
-      return NextResponse.json({ success: true });
-    }
-
     const { name, organization, email, subject, message } = result.data;
 
     const { error: sendError } = await resend.emails.send({

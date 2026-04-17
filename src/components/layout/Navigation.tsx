@@ -8,6 +8,7 @@ const links = [
   { href: "/about/nations", label: "Nations" },
   { href: "/about/objectives", label: "Objectives" },
   { href: "/news", label: "News" },
+  { href: "/media", label: "Media" },
   { href: "/resources", label: "Resources" },
   { href: "/contact", label: "Contact" },
 ];

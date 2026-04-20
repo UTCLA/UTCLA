@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import PageBanner from "@/components/ui/PageBanner";
 
 export const metadata: Metadata = {
   title: "Media",
@@ -7,28 +6,32 @@ export const metadata: Metadata = {
 
 const videos = [
   {
-    id: "v3zuqvc",
+    id: "v3x9d86",
+    pub: "4",
     title: "Pintupi Proclamation",
     description:
       "The formal proclamation of the Pintupi Wati Tjuta Tjungarinyi, founding member of the United Tribal Countries Land Alliance.",
-    rumbleUrl: "https://rumble.com/v3zuqvc-pintupi-proclamation.html",
+    rumbleUrl: "https://rumble.com/v3x9d86-pintupi-proclamation.html",
   },
   {
-    id: "v4h3cql",
+    id: "v4ei3i6",
+    pub: "38cu6n",
     title: "UK Monarchy — Gifting of the Sword of Deliverance to Yolngu Royal Tribal People",
     description:
       "Documentation of the ceremonial gifting of the Sword of Deliverance to the Yolngu Royal Tribal People by the UK Monarchy.",
-    rumbleUrl: "https://rumble.com/v4h3cql-uk-monarchy-gifting-of-the-sword-of-deliverance-to-yolngu-royal-tribal-peop.html",
+    rumbleUrl: "https://rumble.com/v4ei3i6-uk-monarchy-gifting-of-the-sword-of-deliverance-to-yolngu-royal-tribal-peop.html",
   },
   {
-    id: "v4gx4yk",
+    id: "v4ebvn8",
+    pub: "4",
     title: "Uncle Eddie — Massacres on the Land (May 2023)",
     description:
       "Uncle Eddie explains the history of massacres carried out on Aboriginal land in Australia.",
     rumbleUrl: "https://rumble.com/v4gx4yk-uncle-eddie-explains-the-massacres-on-the-land-australia-may-23.html",
   },
   {
-    id: "v4gx559",
+    id: "v4ebvtx",
+    pub: "4",
     title: "Uncle Juma — Presentation at the Russian Embassy (August 2023)",
     description:
       "Uncle Juma's presentation at the Russian Embassy in August 2023, addressing the rights and sovereignty of Aboriginal Nations.",
@@ -39,10 +42,6 @@ const videos = [
 export default function MediaPage() {
   return (
     <>
-      <PageBanner
-        title="Media"
-        description="Video recordings of proclamations, testimonies, and significant events from the Alliance and its Member Nations."
-      />
       <div className="max-w-5xl mx-auto px-6 py-16 md:py-24 space-y-20">
         {videos.map((video) => (
           <section key={video.id}>
@@ -52,7 +51,7 @@ export default function MediaPage() {
             <p className="text-charcoal-600 mb-6">{video.description}</p>
             <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
               <iframe
-                src={`https://rumble.com/embed/${video.id}/`}
+                src={`https://rumble.com/embed/${video.id}/?pub=${video.pub}`}
                 className="absolute inset-0 w-full h-full rounded-lg"
                 frameBorder="0"
                 allowFullScreen

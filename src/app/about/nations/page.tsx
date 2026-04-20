@@ -57,7 +57,7 @@ export default function NationsPage() {
           </p>
           <div className="relative w-full" style={{ paddingTop: "56.25%" }}>
             <iframe
-              src="https://rumble.com/embed/v3zuqvc/"
+              src="https://rumble.com/embed/v3x9d86/?pub=4"
               className="absolute inset-0 w-full h-full rounded-lg"
               frameBorder="0"
               allowFullScreen

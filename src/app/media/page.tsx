@@ -42,7 +42,7 @@ const videos = [
 export default function MediaPage() {
   return (
     <>
-      <div className="max-w-5xl mx-auto px-6 py-16 md:py-24 space-y-20">
+      <div className="max-w-5xl mx-auto px-6 py-16 md:py-24 space-y-12">
         {videos.map((video) => (
           <section key={video.id}>
             <h2 className="font-heading text-2xl font-bold text-charcoal-900 mb-2">

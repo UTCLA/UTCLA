@@ -20,7 +20,9 @@ export default function Footer() {
                 { href: "/about", label: "About" },
                 { href: "/about/governance", label: "Governance" },
                 { href: "/about/nations", label: "Member Nations" },
+                { href: "/about/objectives", label: "Objectives" },
                 { href: "/news", label: "News" },
+                { href: "/media", label: "Media" },
                 { href: "/resources", label: "Resources" },
                 { href: "/contact", label: "Contact" },
               ].map((link) => (

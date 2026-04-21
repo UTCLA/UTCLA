@@ -50,7 +50,7 @@ export default function AboutPage() {
           <h3 className="font-heading text-xl font-semibold text-ochre-700 mb-4">
             Tjukurpa — Supreme Cultural Authority
           </h3>
-          <blockquote className="my-6 border-l-4 border-deep-red-600 pl-6 italic text-charcoal-700 leading-relaxed text-lg">
+          <blockquote className="my-6 border-l-4 border-ochre-500 bg-sand-50 rounded-r-lg px-6 py-4 italic text-charcoal-800 leading-relaxed text-lg">
             The foundation of the Alliance is Tjukurpa (Law/Lore) — the ancient
             governance system derived from nature and upheld through ceremony,
             kinship, songlines, and custodial responsibility.

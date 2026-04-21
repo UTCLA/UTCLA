@@ -53,10 +53,13 @@ export default function ContactForm() {
         <h3 className="font-heading text-2xl font-bold text-charcoal-900 mb-3">
           Message Received
         </h3>
-        <p className="text-charcoal-600">
+        <p className="text-charcoal-600 mb-6">
           Thank you for your correspondence. We will respond through appropriate
           diplomatic channels.
         </p>
+        <Button href="/" variant="secondary">
+          Return to Home
+        </Button>
       </div>
     );
   }
@@ -73,9 +76,11 @@ export default function ContactForm() {
             id="name"
             name="name"
             required
-            className="w-full px-4 py-3 rounded-md border border-earth-400 bg-white text-charcoal-800 placeholder:text-charcoal-400 transition-colors focus:outline-none focus:ring-2 focus:ring-ochre-500 focus:border-ochre-500"
+            aria-invalid={!!errors.name}
+            aria-describedby={errors.name ? "name-error" : undefined}
+            className={`w-full px-4 py-3 rounded-md border bg-white text-charcoal-800 placeholder:text-charcoal-400 transition-colors focus:outline-none focus:ring-2 focus:ring-ochre-500 focus:border-ochre-500 ${errors.name ? "border-deep-red-600" : "border-earth-400"}`}
           />
-          {errors.name && <p className="mt-1 text-sm text-deep-red-600">{errors.name}</p>}
+          {errors.name && <p id="name-error" role="alert" className="mt-1 text-sm text-deep-red-600">{errors.name}</p>}
         </div>
         <div>
           <label htmlFor="organization" className="block text-sm font-medium text-charcoal-700 mb-2">
@@ -99,9 +104,11 @@ export default function ContactForm() {
           id="email"
           name="email"
           required
-          className="w-full px-4 py-3 rounded-md border border-earth-400 bg-white text-charcoal-800 placeholder:text-charcoal-400 transition-colors focus:outline-none focus:ring-2 focus:ring-ochre-500 focus:border-ochre-500"
+          aria-invalid={!!errors.email}
+          aria-describedby={errors.email ? "email-error" : undefined}
+          className={`w-full px-4 py-3 rounded-md border bg-white text-charcoal-800 placeholder:text-charcoal-400 transition-colors focus:outline-none focus:ring-2 focus:ring-ochre-500 focus:border-ochre-500 ${errors.email ? "border-deep-red-600" : "border-earth-400"}`}
         />
-        {errors.email && <p className="mt-1 text-sm text-deep-red-600">{errors.email}</p>}
+        {errors.email && <p id="email-error" role="alert" className="mt-1 text-sm text-deep-red-600">{errors.email}</p>}
       </div>
 
       <div>
@@ -113,9 +120,11 @@ export default function ContactForm() {
           id="subject"
           name="subject"
           required
-          className="w-full px-4 py-3 rounded-md border border-earth-400 bg-white text-charcoal-800 placeholder:text-charcoal-400 transition-colors focus:outline-none focus:ring-2 focus:ring-ochre-500 focus:border-ochre-500"
+          aria-invalid={!!errors.subject}
+          aria-describedby={errors.subject ? "subject-error" : undefined}
+          className={`w-full px-4 py-3 rounded-md border bg-white text-charcoal-800 placeholder:text-charcoal-400 transition-colors focus:outline-none focus:ring-2 focus:ring-ochre-500 focus:border-ochre-500 ${errors.subject ? "border-deep-red-600" : "border-earth-400"}`}
         />
-        {errors.subject && <p className="mt-1 text-sm text-deep-red-600">{errors.subject}</p>}
+        {errors.subject && <p id="subject-error" role="alert" className="mt-1 text-sm text-deep-red-600">{errors.subject}</p>}
       </div>
 
       <div>
@@ -127,9 +136,11 @@ export default function ContactForm() {
           name="message"
           rows={6}
           required
-          className="w-full px-4 py-3 rounded-md border border-earth-400 bg-white text-charcoal-800 placeholder:text-charcoal-400 transition-colors focus:outline-none focus:ring-2 focus:ring-ochre-500 focus:border-ochre-500 resize-vertical"
+          aria-invalid={!!errors.message}
+          aria-describedby={errors.message ? "message-error" : undefined}
+          className={`w-full px-4 py-3 rounded-md border bg-white text-charcoal-800 placeholder:text-charcoal-400 transition-colors focus:outline-none focus:ring-2 focus:ring-ochre-500 focus:border-ochre-500 resize-vertical ${errors.message ? "border-deep-red-600" : "border-earth-400"}`}
         />
-        {errors.message && <p className="mt-1 text-sm text-deep-red-600">{errors.message}</p>}
+        {errors.message && <p id="message-error" role="alert" className="mt-1 text-sm text-deep-red-600">{errors.message}</p>}
       </div>
 
       {status === "error" && (

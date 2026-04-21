@@ -33,18 +33,21 @@ export default async function NewsArticlePage({ params }: Props) {
 
   return (
     <>
-      <section className="bg-charcoal-900 text-white py-16 md:py-24">
-        <div className="max-w-3xl mx-auto px-6">
+      <section className="relative bg-charcoal-900 text-white overflow-hidden py-16 md:py-24">
+        <div className="absolute inset-0 bg-gradient-to-br from-charcoal-900 via-earth-900 to-charcoal-900 opacity-90" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--color-ochre-900)_0%,_transparent_50%)] opacity-40" />
+        <div className="relative max-w-3xl mx-auto px-6">
           <Link
             href="/news"
-            className="text-charcoal-400 hover:text-ochre-400 text-sm transition-colors mb-6 inline-block"
+            className="text-charcoal-200 hover:text-ochre-400 text-sm transition-colors mb-6 inline-block"
           >
             &larr; Back to News
           </Link>
           <h1 className="font-heading text-3xl md:text-4xl font-bold mb-4">
             {article.title}
           </h1>
-          <div className="flex items-center gap-4 text-sm text-charcoal-400">
+          <div className="h-px w-16 bg-ochre-500 mb-4" />
+          <div className="flex items-center gap-4 text-sm text-charcoal-300">
             <time>{date}</time>
             <span>&middot;</span>
             <span>{article.author}</span>

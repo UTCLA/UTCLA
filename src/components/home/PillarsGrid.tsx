@@ -93,7 +93,7 @@ export default function PillarsGrid() {
           title="Strategic Objectives"
           subtitle="Six pillars guiding the Alliance's collective vision for self-determination and sustainable governance."
         />
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {pillars.map((pillar) => (
             <div
               key={pillar.title}

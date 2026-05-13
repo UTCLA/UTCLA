@@ -21,11 +21,12 @@ export interface Resource {
   id: string;
   title: string;
   description: string;
-  category: "governance" | "legal" | "cultural" | "economic";
+  category: "governance" | "legal" | "treaty" | "cultural" | "economic";
   filename: string;
   filePath?: string;
   fileType: string;
   fileSize: string;
+  confidential?: boolean;
 }
 
 export interface ContactFormData {

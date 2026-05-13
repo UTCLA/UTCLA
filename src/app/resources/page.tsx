@@ -10,6 +10,7 @@ const categories = [
   { value: "all", label: "All" },
   { value: "governance", label: "Governance" },
   { value: "legal", label: "Legal" },
+  { value: "treaty", label: "Treaties" },
   { value: "cultural", label: "Cultural" },
   { value: "economic", label: "Economic" },
 ];

@@ -4,6 +4,7 @@ import type { Resource } from "@/types";
 const categoryColors: Record<string, string> = {
   governance: "bg-ochre-100 text-ochre-800",
   legal: "bg-deep-red-100 text-deep-red-800",
+  treaty: "bg-deep-red-100 text-deep-red-800",
   cultural: "bg-earth-200 text-earth-800",
   economic: "bg-sand-200 text-sand-800",
 };
@@ -38,6 +39,15 @@ export default function DocumentCard({ resource }: { resource: Resource }) {
         <h3 className="font-heading text-lg font-bold text-charcoal-900 mb-2">
           {resource.title}
         </h3>
+        {resource.confidential && (
+          <div className="mb-3 flex items-start gap-2 rounded-md border border-deep-red-200 bg-deep-red-50 px-3 py-2 text-xs text-deep-red-800">
+            <span aria-hidden="true" className="mt-px font-bold">&copy;</span>
+            <span>
+              <span className="font-semibold uppercase tracking-wide">Private &amp; Confidential</span>
+              <span className="ml-1">— Copyright protected. Reproduction or distribution without consent is prohibited.</span>
+            </span>
+          </div>
+        )}
         <p className="text-sm text-charcoal-600 leading-relaxed mb-4">
           {resource.description}
         </p>

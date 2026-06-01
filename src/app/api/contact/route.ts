@@ -2,7 +2,34 @@ import { NextResponse } from "next/server";
 import { Resend } from "resend";
 import { contactFormSchema } from "@/lib/validation";
 
+const RATE_LIMIT_WINDOW_MS = 10 * 60 * 1000; // 10 minutes
+const RATE_LIMIT_MAX = 5;
+
+const ipHits = new Map<string, { count: number; resetAt: number }>();
+
+function isRateLimited(ip: string): boolean {
+  const now = Date.now();
+  const entry = ipHits.get(ip);
+  if (!entry || now > entry.resetAt) {
+    ipHits.set(ip, { count: 1, resetAt: now + RATE_LIMIT_WINDOW_MS });
+    return false;
+  }
+  if (entry.count >= RATE_LIMIT_MAX) return true;
+  entry.count++;
+  return false;
+}
+
 export async function POST(request: Request) {
+  const ip =
+    request.headers.get("x-forwarded-for")?.split(",")[0].trim() ?? "unknown";
+
+  if (isRateLimited(ip)) {
+    return NextResponse.json(
+      { error: "Too many requests. Please try again later." },
+      { status: 429 }
+    );
+  }
+
   const resend = new Resend(process.env.RESEND_API_KEY);
   try {
     const body = await request.json();
@@ -42,31 +69,6 @@ export async function POST(request: Request) {
         { status: 500 }
       );
     }
-
-    // Send confirmation email to the submitter
-    await resend.emails.send({
-      from: "UTCLA <contact@utcla.org>",
-      to: email,
-      subject: "Your message has been received — UTCLA",
-      text: [
-        `Dear ${name},`,
-        "",
-        "Thank you for your correspondence with the United Tribal Countries Land Alliance.",
-        "",
-        "We have received your message and will respond through appropriate diplomatic channels.",
-        "",
-        "For your records, here is a copy of your submission:",
-        "",
-        `Subject: ${subject}`,
-        "",
-        "Message:",
-        message,
-        "",
-        "Warm regards,",
-        "United Tribal Countries Land Alliance",
-        "contact@utcla.org",
-      ].join("\n"),
-    });
 
     return NextResponse.json({ success: true });
   } catch (error) {

@@ -5,7 +5,7 @@ import { contactFormSchema, type ContactFormValues } from "@/lib/validation";
 import { useState } from "react";
 
 export default function ContactForm() {
-  const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error">("idle");
+  const [status, setStatus] = useState<"idle" | "submitting" | "success" | "error" | "ratelimited">("idle");
   const [errors, setErrors] = useState<Record<string, string>>({});
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -40,6 +40,10 @@ export default function ContactForm() {
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(result.data),
       });
+      if (res.status === 429) {
+        setStatus("ratelimited");
+        return;
+      }
       if (!res.ok) throw new Error("Failed to submit");
       setStatus("success");
     } catch {
@@ -146,6 +150,11 @@ export default function ContactForm() {
       {status === "error" && (
         <p className="text-deep-red-600 text-sm">
           There was an error submitting your message. Please try again.
+        </p>
+      )}
+      {status === "ratelimited" && (
+        <p className="text-deep-red-600 text-sm">
+          Too many submissions. Please wait a few minutes before trying again.
         </p>
       )}
 

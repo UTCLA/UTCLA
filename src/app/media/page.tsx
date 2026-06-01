@@ -4,6 +4,25 @@ export const metadata: Metadata = {
   title: "Media",
 };
 
+const localVideos = [
+  {
+    src: "/videos/Gungahlin & Yarralumla - Jan 2024 Trip.mov",
+    title: "Gungahlin & Yarralumla — Jan 2024 Trip",
+  },
+  {
+    src: "/videos/Portraits - From 2023 – 2024.mov",
+    title: "Portraits — From 2023–2024",
+  },
+  {
+    src: "/videos/21 September - 2020.mov",
+    title: "21 September 2020",
+  },
+  {
+    src: "/videos/5 September - 2019.mov",
+    title: "5 September 2019",
+  },
+];
+
 const videos = [
   {
     id: "v3x9d86",
@@ -71,6 +90,28 @@ export default function MediaPage() {
             </p>
           </section>
         ))}
+
+        <div className="pt-8 border-t border-earth-200">
+          <h2 className="font-heading text-3xl font-bold text-charcoal-900 mb-8">
+            Archive Footage
+          </h2>
+          <div className="space-y-10">
+            {localVideos.map((video) => (
+              <section key={video.src}>
+                <h3 className="font-heading text-xl font-bold text-charcoal-900 mb-4">
+                  {video.title}
+                </h3>
+                <video
+                  src={video.src}
+                  controls
+                  className="w-full rounded-lg bg-charcoal-900"
+                  preload="metadata"
+                  title={video.title}
+                />
+              </section>
+            ))}
+          </div>
+        </div>
       </div>
     </>
   );

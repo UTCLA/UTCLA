@@ -75,3 +75,14 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--color-ochre-200);
   color: var(--color-charcoal-900);
 }
+
+/* Prevent Tailwind v4 preflight from breaking Leaflet tile rendering */
+.leaflet-container img.leaflet-tile,
+.leaflet-container img {
+  display: inline;
+  max-width: none;
+}
+
+.leaflet-container {
+  font-family: var(--font-body);
+}

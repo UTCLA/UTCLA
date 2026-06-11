@@ -1,8 +1,8 @@
 "use client";
 
 import { MapContainer, TileLayer, Polygon, Popup } from "react-leaflet";
-import type { Nation } from "@/types";
 import "leaflet/dist/leaflet.css";
+import type { Nation } from "@/types";
 
 interface NationsMapProps {
   nations: Nation[];

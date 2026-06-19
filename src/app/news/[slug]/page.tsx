@@ -17,7 +17,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug } = await params;
   const article = getNewsArticle(slug);
   if (!article) return { title: "Article Not Found" };
-  return { title: article.title };
+  return {
+    title: article.title,
+    description: article.excerpt,
+    alternates: { canonical: `/news/${slug}` },
+    openGraph: {
+      type: "article",
+      title: article.title,
+      description: article.excerpt,
+      url: `/news/${slug}`,
+      publishedTime: article.date,
+      authors: article.author ? [article.author] : undefined,
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: article.title,
+      description: article.excerpt,
+    },
+  };
 }
 
 export default async function NewsArticlePage({ params }: Props) {

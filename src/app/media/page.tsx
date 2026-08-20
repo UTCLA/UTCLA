@@ -10,7 +10,7 @@ const localVideos = [
     title: "Gungahlin & Yarralumla — Jan 2024 Trip",
   },
   {
-    src: "/videos/Portraits - From 2023 – 2024.mov",
+    src: "/videos/Portraits - From 2023 – 2024.mov",
     title: "Portraits — From 2023–2024",
   },
   {

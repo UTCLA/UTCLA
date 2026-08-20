@@ -34,7 +34,7 @@ const securityHeaders = [
       "font-src 'self' https://fonts.gstatic.com",
       "img-src 'self' data: blob: https://*.basemaps.cartocdn.com",
       "connect-src 'self' https://*.basemaps.cartocdn.com",
-      "frame-src 'none'",
+      "frame-src 'self' https://rumble.com",
       "object-src 'none'",
       "base-uri 'self'",
       "form-action 'self'",
